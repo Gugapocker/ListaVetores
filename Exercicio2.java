@@ -7,7 +7,7 @@ public class Exercicio2 {
 		valor = ler.nextDouble();
 		
 		
-	    //se for menor que 100 pila
+	    //se for menor que 100 Reais
 		if (valor < 100) {
 			 int  nhera = 0;
 			    nhera = ler.nextInt();	
@@ -27,7 +27,7 @@ public class Exercicio2 {
 	    System.out.println("\n");
 	    System.out.println("Digite 1 para a vista ");
 	    System.out.println("Digite 2 para parcelar em 2 vezes ");
-	    System.out.println("Digite 3 para parcelar em 2 ou em até 10 vezes  ");
+	    System.out.println("Digite 3 para parcelar em 2 ou em atÃ© 10 vezes  ");
 	    int  nera = 0;
 	    nera = ler.nextInt();
 	    
@@ -50,7 +50,7 @@ public class Exercicio2 {
 	public static int val (double valor) {
 		   Scanner ler = new Scanner ( System.in); 
 		   valor = valor - valor/100 * 10;
-		     System.out.printf(   "O valor a pagar é de : %.2f", valor  );
+		     System.out.printf(   "O valor a pagar Ã© de : %.2f", valor  );
 		return 0;
                                           }
 
@@ -58,7 +58,7 @@ public class Exercicio2 {
 		  System.out.printf(  "valor da primeira parcela : " + (valor /2)  ); 
 		  System.out.printf(  "valor da segunda parcela : " + (valor /2) );
 		System.out.println("\n");
-		  System.out.printf(   "O valor a pagar é de : %.2f", valor  );
+		  System.out.printf(   "O valor a pagar Ã© de : %.2f", valor  );
 		return 0;
 	
 	
@@ -72,7 +72,7 @@ public class Exercicio2 {
 		int parcelas = ler.nextInt();
 		valor = valor / parcelas;
 		if ( parcelas > 10) {
-			System.out.println("O numero maximo possivel de parcelas é de 10, escolha outro numero >:( ");
+			System.out.println("O numero maximo possivel de parcelas Ã© de 10, escolha outro numero >:( ");
 		  System.out.println(    "\n"   );
 			System.exit(0);
 		}
@@ -80,7 +80,7 @@ public class Exercicio2 {
 		for (int i = 1 ; i <= parcelas ; i++  ) {
 			
 			valor = valor + valor/100 * 10;
-	   System.out.printf(   "é o valor a pagar no  " +i+ "° mes de pagamento é de : %.2f" , valor  );
+	   System.out.printf(   "Ã© o valor a pagar no  " +i+ "Â° mes de pagamento Ã© de : %.2f" , valor  );
         System.out.println("\n");
         
 		   }
